@@ -92,7 +92,12 @@ var obj = {
   // Code Here
 
   function (obj){
-    for(var i = 0; i < array.length; i++){
-        if(obj[i][allies] )
+    for(var i = 0; i < obj.allies.length; i++){
+        // return o.allies[i];
+        if(obj.allies[i]==='LittleFinger'){
+            obj.allies.splice(i,1);
+            obj.allies.push('Dragon Lady')
+            return obj.allies
+        }
     }
   }
